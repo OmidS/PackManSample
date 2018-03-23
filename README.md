@@ -1,6 +1,7 @@
 # MATLAB package management example
 
-This project serves as an example for dependency management in matlab. It uses DepMat (By Tom Doel, https://github.com/tomdoel/depmat) to fetch packages from git (e.g. from github).
+This project serves as an example for dependency management in MATLAB. 
+It uses PackMan (based on a fork of DepMat by Tom Doel, https://github.com/tomdoel/depmat) to fetch packages from git (e.g. from github).
 
 ### Quick Start
 
@@ -9,7 +10,7 @@ To start a new project that depends on other repos, you can:
 1) Clone of this repo to use it as the starting point for your project by running:
 
 ```
->> !git clone https://github.com/OmidS/matlab-package-managed-example.git MyProject
+>> !git clone https://github.com/OmidS/PackManSample.git MyProject
 ```
 
 2) Go into the project directory:
@@ -28,7 +29,7 @@ To start a new project that depends on other repos, you can:
 
 5) If you need to add more dependencies, repeat 3 and 4.
 
-6) Before running you code, to add dependencies to the MATLAB path, use the Package Manager object as follows:
+6) Before running your code (e.g. in a main.m script), to add dependencies to the MATLAB path, use the Package Manager object as follows:
 
 ```
 >> pm = installDeps;
