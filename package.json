@@ -1,0 +1,12 @@
+{
+ "dependencies":{
+  "PackMan":{
+   "Name":"PackMan",
+   "Branch":"master",
+   "Url":"https://github.com/OmidS/PackMan.git",
+   "FolderName":"PackMan",
+   "Commit":"6fc3a46f77561f8baf8b9e2930bc9aeb7ada8c11",
+   "GetLatest":true
+  }
+ }
+}

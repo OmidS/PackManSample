@@ -1,7 +1,7 @@
 # MATLAB package management example
 
 This project serves as an example for dependency management in MATLAB. 
-It uses PackMan (based on a fork of DepMat by Tom Doel, https://github.com/tomdoel/depmat) to fetch packages from git (e.g. from github).
+It uses [PackMan](https://github.com/OmidS/PackMan) (which is based on DepMat by Tom Doel, https://github.com/tomdoel/depmat) to fetch packages from git (e.g. from github).
 
 ### Quick Start
 

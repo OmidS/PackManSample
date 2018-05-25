@@ -6,6 +6,7 @@
 %               for dependencies. If you use something other than the
 %               default, don't forget to add it to .gitignore so that git
 %               doesn't track it. 
+%     - (3 and later): will be passed to PackMan as the 3rd and later inputs.
 %   Outputs:
 %     - (1) pm (optional): the package manager object. This object can be
 %               used to manually install deps by calling:
@@ -18,7 +19,7 @@
 %       % Then simply call this any time you want to install/update:
 %       installDeps
 
-function varargout = installDeps( depList, depSubDir )
+function varargout = installDeps( depList, depSubDir, varargin )
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Directory of dependencies
@@ -34,7 +35,7 @@ if nargin < 1 || isempty(depList)
     depList = getDepList();
 end
 
-pm = PackMan(depList, depSubDir); % Install other dependencies
+pm = PackMan(depList, depSubDir, varargin{:}); % Install other dependencies
 
 if nargout < 1
     pm.install();
